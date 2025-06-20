@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login </title>
+  <meta name="keywords" content="PHP,PostgreSQL,Insert,Login">
+  <link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+<div id="main_container">
+ <div id="header">
+	 <div class="top_right">
+      <div class="big_banner"><img src="images/banner728.jpg" alt="" border="0" /></div>
+    </div>
+    <div id="logo"> <img src="images/logo.png" alt="" border="0" width="182" height="85" /> </div>
+  <div id="main_content">
+    <div id="menu_tab">
+    <ul class="menu">
+        <li><a href="home.html" class="nav"> Home </a></li>
+        <li class="divider"></li>
+        <li><a href="index5.html" class="nav">Grocery</a></li>
+        <li class="divider"></li>
+        <li><a href="index3.html" class="nav">Health & personal</a></li>
+        <li class="divider"></li>
+         <li><a href="index.html" class="nav">cofee & tea</a></li>
+        <li class="divider"></li>
+        <li><a href="snacks.html" class="nav">snacks</a></li>
+        <li class="divider"></li>
+        <li><a href="HEALTHCARE.html" class="nav">Beauty</a></li>
+        <li class="divider"></li>
+        <li><a href="index2.html" class="nav">Household </a></li>
+        <li class="divider"></li>
+       <li><a href="index4.html" class="nav">baking</a></li>
+        <li class="divider"></li>
+        <li><a href="index6.html" class="nav">Ready to cook</a></li>
+      </ul>
+    </div>
+<h2>Checkout</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
